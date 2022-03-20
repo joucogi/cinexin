@@ -1,4 +1,4 @@
-package com.joucogi.cinexin
+package com.cinexin.apps.visualizer.controller
 
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
@@ -10,7 +10,7 @@ class HealthCheckGetController {
     fun index() = ResponseEntity.ok().body(
         hashMapOf(
             "status" to "ok",
-            "application" to "cinexin-backoffice"
+            "application" to "cinexin-visualizer"
         )
     )
 }
